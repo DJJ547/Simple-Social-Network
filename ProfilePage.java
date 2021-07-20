@@ -112,8 +112,8 @@ public class ProfilePage  implements ActionListener{
 		    if(uID.equals(userID)) {
 		    	//do nothing if userID is myself
 		    }else {
-		    	ImageIcon img = accountInfo.get(userID);
-		    	String name = nameInfo.get(userID);
+		    	ImageIcon img = accountInfo.get(uID);
+		    	String name = nameInfo.get(uID);
 		    	JPanel userPanel = new JPanel();
 		    	userPanel.setBounds(5, y, 540, 120);
 		    	userPanel.setLayout(null);
@@ -128,6 +128,7 @@ public class ProfilePage  implements ActionListener{
 		    	sLabel.setBounds(120, 35, 150, 25);
 		    	JButton addButton = new JButton("+ Add Friend");
 		    	addButton.setFocusable(false);
+		    	/**
 		    	addButton.addActionListener(new ActionListener() {
 		    	    public void actionPerformed(ActionEvent e) {
 		    	        if(e.getSource() == addButton) {
@@ -136,6 +137,7 @@ public class ProfilePage  implements ActionListener{
 		    	        }
 		    	    }
 		    	});
+		    	*/
 		    	addButton.setBounds(400, 70, 120, 40);
 		    	
 		    	//userPanel.setBounds(195, 30, 500, 300);
