@@ -1,14 +1,16 @@
-import javax.swing.ImageIcon;
+import java.util.ArrayList;
 
 public class Driver {
 	public static void main(String[] args) {
-		IDandPasswords idp = new IDandPasswords();
-		accountAndImage ai = new accountAndImage();
-		IDandName in = new IDandName();
+		IDandPasswords IDandPassword = new IDandPasswords();
+		IDandImages IDandImage = new IDandImages();
+		IDandNames IDandName = new IDandNames();
+		IDandProfiles IDandProfile = new IDandProfiles();
+		IDandStatus IDandStatus = new IDandStatus();
+		ArrayList<ProfilePage> profileList = new ArrayList<ProfilePage>();
 		
-		UndirectedGraph graph = new UndirectedGraph();
-		//ProfileManager manager = new ProfileManager();
-		LoginPage login = new LoginPage(idp.getLoginInfo(), ai.getLoginInfo(),in.getLoginInfo(),graph);
-		//ProfilePage pp = new ProfilePage("123", idp.getLoginInfo(), ai.getLoginInfo(), in.getLoginInfo(), graph);
+		ProfileManager manager = new ProfileManager(IDandImage, IDandName, 
+				IDandPassword, IDandStatus, profileList);
+		manager.displayLoginPage(manager);
 	} // end main
 } // end Drive

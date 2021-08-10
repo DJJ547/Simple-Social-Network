@@ -1,13 +1,25 @@
 import java.util.HashMap;
 
 public class IDandPasswords {
-	HashMap<String, String> loginInfo = new HashMap<String, String>();
+	private HashMap<String, String> IDpassword = new HashMap<String, String>();
 
 	public IDandPasswords(){
-		loginInfo.put("123", "123");
+		
 	}
 	
-	protected HashMap getLoginInfo() {
-		return loginInfo;
+	protected HashMap<String, String> getLoginInfo() {
+		return IDpassword;
+	}
+	
+	protected boolean containsKey(String key) {
+		return IDpassword.containsKey(key);
+	}
+	
+	protected String get(String userID) {
+		return IDpassword.get(userID);
+	}
+	
+	public void putIDandPassword(String ID, String password) {
+		IDpassword.put(ID, password);
 	}
 }
