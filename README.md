@@ -11,12 +11,16 @@ This program involves plenty of GUI design.
 
 There are mainly four pages a user can navigate through, they are:
 1.Login Page,
+
 ![ScreenShot](testImage/LoginPage.png)
 2.Sign Up Page, 
+
 ![ScreenShot](testImage/SignUpPage.png)
 3.Profile Page, 
+
 ![ScreenShot](testImage/ProfilePage.png)
 4.Modification Page.
+
 ![ScreenShot](testImage/BeforeModify.png)
 
 Below are images showing how this program operates:
