@@ -159,7 +159,7 @@ public class ProfilePage{
 		frame.add(cancelButton);
 		
 		frame.setTitle("Modify Profile");
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		//frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(450, 450);
 		frame.setLocationRelativeTo(null);
 		frame.setLayout(null);

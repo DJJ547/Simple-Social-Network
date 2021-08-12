@@ -22,8 +22,6 @@ public class ProfileManager {
 	private JLabel imgLabel;
 	private JLabel nLabel;
 	private JLabel sLabel;
-	private JButton addButton;
-	private JButton removeButton;
 	private Border blackline = BorderFactory.createLineBorder(Color.black);
 	
 	/** Constructor for an instance of a profile manager. */
@@ -293,6 +291,9 @@ public class ProfileManager {
     	nLabel.setBounds(120, 15, 150, 25);
     	sLabel = new JLabel("Status: " + p.getStatus());
     	sLabel.setBounds(120, 35, 150, 25);
+    	
+    	JButton addButton;
+    	JButton removeButton;
     	
     	addButton = new JButton("+ Add Friend");
     	removeButton = new JButton("- Remove Friend");
