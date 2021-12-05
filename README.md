@@ -1,4 +1,4 @@
-# Simple-Social-Network
+# Simple-Social-Network-App
 This is a Jave program. This program uses an undirected graph as a ProfileManager to maintain the data of a simple social network. 
 It also uses multiple HashMap to store the IDs, passwords, names, status, and profile images.
 Each person in the network has a profile page that contains the person's name, profile image, current status, 
